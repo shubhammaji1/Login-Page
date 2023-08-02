@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3a3e121ecf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="leaves">
+            <div class="set">
+                <div><img src="images/leaf_01.png"></div>
+                <div><img src="images/leaf_02.png"></div>
+                <div><img src="images/leaf_03.png"></div>
+                <div><img src="images/leaf_04.png"></div>
+                <div><img src="images/leaf_01.png"></div>
+                <div><img src="images/leaf_02.png"></div>
+                <div><img src="images/leaf_03.png"></div>
+                <div><img src="images/leaf_04.png"></div>
+                
+            </div>
+        </div>
+        <img src="images/bg.jpg" class="bg">
+        <img src="images/girl.png" class="girl">
+            <!-- <div class="login">
+                <h2>Login</h2>
+                <div class="inputBox">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="login" id="btn">
+                </div>
+                <div class="group">
+                    <a href="#">Forgot Password</a>
+                    <a href="#">Signup</a>
+                    
+                </div>
+
+
+            </div> -->
+        <div class="signup-box">
+
+
+
+            <form action="submitted.html" name="suForm" id="supform">
+                <input type="text" placeholder="Full name" id="name" onclick="resetBtn()" maxlength="30">
+                <input type="text" placeholder="Email" id="email" onclick="resetBtn()">
+                <input type="password" placeholder="Password" id="pass" onclick="resetBtn()" minlength="8">
+                
+                <input type="checkbox" name="check1" id="check" onclick="resetBtn()">
+                <label for="check" class="label">I agree to the 'Terms and policies'.</label>
+            
+                <input type="submit" id="submit-btn" value="Sign Up" onmouseover="mouseOver()">
+            </form>
+            </div>
+            
+        <img src="images/trees.png" class="trees">
+    </section>   
+
+<!-- <script>
+
+    var a = 0;
+
+    function mouseOver(){
+        
+        const name = document.forms['suForm']['name'].value;
+        const email = document.forms['suForm']['email'].value;
+        const pass = document.forms['suForm']['pass'].value;
+        const tick = document.querySelector('#check');
+
+        const emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a==0){
+        buttonMoveLeft();
+        a = 1;
+        return false;
+        } 
+
+        if((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a==1){
+        buttonMoveRight();
+        a = 2;
+        return false;
+        } 
+
+        if((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a==2){
+        buttonMoveLeft();
+        a = 1;
+        return false;
+        } 
+
+        else{ 
+            document.getElementById('submit-btn').style.cursor = 'pointer';
+            return false;
+        };
+
+    };
+
+
+    
+
+    function buttonMoveLeft(){
+
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(-160%)';
+
+    };
+
+
+    function buttonMoveRight(){
+
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(0%)';
+
+    };
+
+
+    function resetBtn(){
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(0%)';
+    };
+
+
+</script>
+</body>
+</html> -->
